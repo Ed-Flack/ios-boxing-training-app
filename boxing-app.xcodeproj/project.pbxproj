@@ -14,6 +14,12 @@
 		FB76A60327DC39ED00E60417 /* boxing_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76A60227DC39ED00E60417 /* boxing_appTests.swift */; };
 		FB76A60D27DC39ED00E60417 /* boxing_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76A60C27DC39ED00E60417 /* boxing_appUITests.swift */; };
 		FB76A60F27DC39ED00E60417 /* boxing_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76A60E27DC39ED00E60417 /* boxing_appUITestsLaunchTests.swift */; };
+		FB7B461F28CD0A9D00F9F9F9 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7B461E28CD0A9D00F9F9F9 /* BoxView.swift */; };
+		FB7B462428D0AA6400F9F9F9 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB7B462328D0AA6400F9F9F9 /* bell.mp3 */; };
+		FB7B462628D0AA7C00F9F9F9 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB7B462528D0AA7C00F9F9F9 /* beep.mp3 */; };
+		FB7B462828D0AA9200F9F9F9 /* single_bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB7B462728D0AA9200F9F9F9 /* single_bell.mp3 */; };
+		FBC6F12928BE40DC009F1CD8 /* Toaster in Frameworks */ = {isa = PBXBuildFile; productRef = FBC6F12828BE40DC009F1CD8 /* Toaster */; };
+		FBC6F12C28BE5CCF009F1CD8 /* PrepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6F12B28BE5CCF009F1CD8 /* PrepView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB76A5EE27DC39EB00E60417 /* boxing-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "boxing-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB76A5EE27DC39EB00E60417 /* Flacky's Boxing App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flacky's Boxing App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB76A5F127DC39EB00E60417 /* boxing_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boxing_appApp.swift; sourceTree = "<group>"; };
 		FB76A5F327DC39EB00E60417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB76A5F527DC39ED00E60417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +50,11 @@
 		FB76A60827DC39ED00E60417 /* boxing-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "boxing-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB76A60C27DC39ED00E60417 /* boxing_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boxing_appUITests.swift; sourceTree = "<group>"; };
 		FB76A60E27DC39ED00E60417 /* boxing_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boxing_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB7B461E28CD0A9D00F9F9F9 /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
+		FB7B462328D0AA6400F9F9F9 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bell.mp3; path = "boxing-app/Assets.xcassets/bell.dataset/bell.mp3"; sourceTree = SOURCE_ROOT; };
+		FB7B462528D0AA7C00F9F9F9 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beep.mp3; path = "boxing-app/Assets.xcassets/beep.dataset/beep.mp3"; sourceTree = SOURCE_ROOT; };
+		FB7B462728D0AA9200F9F9F9 /* single_bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = single_bell.mp3; path = "boxing-app/Assets.xcassets/single_bell.dataset/single_bell.mp3"; sourceTree = SOURCE_ROOT; };
+		FBC6F12B28BE5CCF009F1CD8 /* PrepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC6F12928BE40DC009F1CD8 /* Toaster in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +90,14 @@
 				FB76A60127DC39ED00E60417 /* boxing-appTests */,
 				FB76A60B27DC39ED00E60417 /* boxing-appUITests */,
 				FB76A5EF27DC39EB00E60417 /* Products */,
+				FBC6F12A28BE4108009F1CD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		FB76A5EF27DC39EB00E60417 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB76A5EE27DC39EB00E60417 /* boxing-app.app */,
+				FB76A5EE27DC39EB00E60417 /* Flacky's Boxing App.app */,
 				FB76A5FE27DC39ED00E60417 /* boxing-appTests.xctest */,
 				FB76A60827DC39ED00E60417 /* boxing-appUITests.xctest */,
 			);
@@ -94,10 +107,13 @@
 		FB76A5F027DC39EB00E60417 /* boxing-app */ = {
 			isa = PBXGroup;
 			children = (
+				FB7B462228D0A9F700F9F9F9 /* Sound */,
 				FB76A5F127DC39EB00E60417 /* boxing_appApp.swift */,
 				FB76A5F327DC39EB00E60417 /* ContentView.swift */,
 				FB76A5F527DC39ED00E60417 /* Assets.xcassets */,
 				FB76A5F727DC39ED00E60417 /* Preview Content */,
+				FBC6F12B28BE5CCF009F1CD8 /* PrepView.swift */,
+				FB7B461E28CD0A9D00F9F9F9 /* BoxView.swift */,
 			);
 			path = "boxing-app";
 			sourceTree = "<group>";
@@ -127,6 +143,23 @@
 			path = "boxing-appUITests";
 			sourceTree = "<group>";
 		};
+		FB7B462228D0A9F700F9F9F9 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				FB7B462728D0AA9200F9F9F9 /* single_bell.mp3 */,
+				FB7B462528D0AA7C00F9F9F9 /* beep.mp3 */,
+				FB7B462328D0AA6400F9F9F9 /* bell.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		FBC6F12A28BE4108009F1CD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,8 +176,11 @@
 			dependencies = (
 			);
 			name = "boxing-app";
+			packageProductDependencies = (
+				FBC6F12828BE40DC009F1CD8 /* Toaster */,
+			);
 			productName = "boxing-app";
-			productReference = FB76A5EE27DC39EB00E60417 /* boxing-app.app */;
+			productReference = FB76A5EE27DC39EB00E60417 /* Flacky's Boxing App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FB76A5FD27DC39ED00E60417 /* boxing-appTests */ = {
@@ -215,6 +251,10 @@
 				Base,
 			);
 			mainGroup = FB76A5E527DC39EB00E60417;
+			packageReferences = (
+				FBC6F12628BE3FDD009F1CD8 /* XCRemoteSwiftPackageReference "Toaster" */,
+				FBC6F12728BE40DC009F1CD8 /* XCRemoteSwiftPackageReference "Toaster" */,
+			);
 			productRefGroup = FB76A5EF27DC39EB00E60417 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +271,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7B462828D0AA9200F9F9F9 /* single_bell.mp3 in Resources */,
 				FB76A5F927DC39ED00E60417 /* Preview Assets.xcassets in Resources */,
 				FB76A5F627DC39ED00E60417 /* Assets.xcassets in Resources */,
+				FB7B462628D0AA7C00F9F9F9 /* beep.mp3 in Resources */,
+				FB7B462428D0AA6400F9F9F9 /* bell.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7B461F28CD0A9D00F9F9F9 /* BoxView.swift in Sources */,
 				FB76A5F427DC39EB00E60417 /* ContentView.swift in Sources */,
 				FB76A5F227DC39EB00E60417 /* boxing_appApp.swift in Sources */,
+				FBC6F12C28BE5CCF009F1CD8 /* PrepView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,11 +462,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"boxing-app/Preview Content\"";
+				DEVELOPMENT_TEAM = B49AZ75Z62;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,7 +477,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "EdFlack.boxing-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Flacky's Boxing App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,11 +492,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"boxing-app/Preview Content\"";
+				DEVELOPMENT_TEAM = B49AZ75Z62;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,7 +507,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "EdFlack.boxing-app";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Flacky's Boxing App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -577,6 +626,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBC6F12628BE3FDD009F1CD8 /* XCRemoteSwiftPackageReference "Toaster" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Toaster.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		FBC6F12728BE40DC009F1CD8 /* XCRemoteSwiftPackageReference "Toaster" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Toaster.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBC6F12828BE40DC009F1CD8 /* Toaster */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBC6F12728BE40DC009F1CD8 /* XCRemoteSwiftPackageReference "Toaster" */;
+			productName = Toaster;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB76A5E627DC39EB00E60417 /* Project object */;
 }
